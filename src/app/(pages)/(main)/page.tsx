@@ -2,6 +2,9 @@ import { Metadata } from "next";
 import PostsSection from "./_components/posts-section";
 import CategoriesSection from "./_components/categories-section";
 import AuthorSection from "@/components/author-section";
+import { revalidateTime } from "@/lib/utils";
+
+export const revalidate = revalidateTime;
 
 export const metadata: Metadata = {
   title: "مدونتي: اكتشف مواضيع متنوعة ومفيدة",

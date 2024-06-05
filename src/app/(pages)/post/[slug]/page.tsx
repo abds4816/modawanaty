@@ -11,6 +11,9 @@ import SectionTitle from "@/components/section-title";
 import RelatedPost from "../_components/related-post";
 import { richTextComponents } from "@/components/rich-text-components";
 import { notFound } from "next/navigation";
+import { revalidateTime } from "@/lib/utils";
+
+export const revalidate = revalidateTime;
 
 export async function generateMetadata({
   params,
